@@ -14,7 +14,7 @@ const themeBtn = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 
 // Persist preference
-const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
 html.setAttribute('data-theme', savedTheme);
 updateThemeIcon(savedTheme);
 
