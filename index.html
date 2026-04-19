@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Dinesh Sriram Velan  — Web Developer & Freelancer. Portfolio showcasing projects in React, MongoDB, JavaScript, and more." />
+  <title>Dinesh Sriram Velan | Web Developer & Freelancer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── Loading Screen ──────────────────────────────────────────── -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- ─── Navbar ──────────────────────────────────────────────────── -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">
+        <span class="logo-accent">D</span>SV
+      </a>
+      <nav class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="#about" class="nav-link" id="nav-about">About</a>
+        <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+        <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary" id="nav-hire-btn">Hire Me</a>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Hero ────────────────────────────────────────────────────── -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Dinesh Sriram Velan</h1>
+      <p class="hero-role">
+        <span class="role-badge">
+          <i class="fa-solid fa-code"></i> Web Developer
+        </span>
+        <span class="role-separator">&amp;</span>
+        <span class="role-badge">
+          <i class="fa-solid fa-laptop-code"></i> Freelancer
+        </span>
+      </p>
+      <p class="hero-tagline">
+        Building modern, dynamic, and responsive web experiences.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary btn-lg" id="hero-hire-btn">
+          <i class="fa-solid fa-paper-plane"></i> Hire Me
+        </a>
+        <a href="#projects" class="btn btn-outline btn-lg" id="hero-projects-btn">
+          <i class="fa-solid fa-eye"></i> View Projects
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span class="scroll-dot"></span>
+    </div>
+  </section>
+
+  <!-- ─── About ───────────────────────────────────────────────────── -->
+  <section id="about" class="section" aria-label="About Me">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Get to know me</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-card glass reveal">
+        <div class="about-icon-wrap" aria-hidden="true">
+          <i class="fa-solid fa-user-tie about-icon"></i>
+        </div>
+        <div class="about-text">
+          <p>
+            I am a passionate web developer with experience in building dynamic and responsive websites.
+            I have a strong background in HTML, CSS, JavaScript, and MongoDB.
+            I enjoy creating user-friendly interfaces and solving complex problems through code.
+            My goal is to continuously learn and grow as a developer while contributing to meaningful projects.
+          </p>
+          <div class="about-chips">
+            <span class="chip"><i class="fa-solid fa-location-dot"></i> India</span>
+            <span class="chip"><i class="fa-solid fa-briefcase"></i> Open to Work</span>
+            <span class="chip"><i class="fa-solid fa-graduation-cap"></i> Full-Stack Learner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ──────────────────────────────────────────────────── -->
+  <section id="skills" class="section section-alt" aria-label="Skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">What I work with</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass reveal" id="skill-html-css-js">
+          <div class="skill-icon-wrap">
+            <i class="fa-brands fa-html5 skill-icon" style="color:#e34c26;"></i>
+          </div>
+          <h3 class="skill-name">HTML, CSS &amp; JavaScript</h3>
+          <p class="skill-desc">Core web technologies for structure, styling, and interactivity.</p>
+        </div>
+
+        <div class="skill-card glass reveal" id="skill-react">
+          <div class="skill-icon-wrap">
+            <i class="fa-brands fa-react skill-icon" style="color:#61dafb;"></i>
+          </div>
+          <h3 class="skill-name">React</h3>
+          <p class="skill-desc">Building component-driven, dynamic user interfaces.</p>
+        </div>
+
+        <div class="skill-card glass reveal" id="skill-mongodb">
+          <div class="skill-icon-wrap">
+            <i class="fa-solid fa-database skill-icon" style="color:#47a248;"></i>
+          </div>
+          <h3 class="skill-name">MongoDB</h3>
+          <p class="skill-desc">NoSQL database design, integration, and data management.</p>
+        </div>
+
+        <div class="skill-card glass reveal" id="skill-java">
+          <div class="skill-icon-wrap">
+            <i class="fa-brands fa-java skill-icon" style="color:#f89820;"></i>
+          </div>
+          <h3 class="skill-name">Java</h3>
+          <p class="skill-desc">Object-oriented programming and backend logic.</p>
+        </div>
+
+        <div class="skill-card glass reveal" id="skill-git">
+          <div class="skill-icon-wrap">
+            <i class="fa-brands fa-git-alt skill-icon" style="color:#f05032;"></i>
+          </div>
+          <h3 class="skill-name">Git &amp; GitHub</h3>
+          <p class="skill-desc">Version control, collaboration, and code management.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ────────────────────────────────────────────────── -->
+  <section id="projects" class="section" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">What I've built</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card glass reveal" id="project-fabric">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <span class="project-tag">Database App</span>
+          </div>
+          <h3 class="project-title">Fabric Cost Management System</h3>
+          <p class="project-desc">Database-driven system to manage fabric stock and pricing.</p>
+          <div class="project-tech">
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">React</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status"><i class="fa-solid fa-circle-check"></i> Completed</span>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" id="project-portfolio">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-id-card"></i>
+            </div>
+            <span class="project-tag">Personal</span>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">Personal portfolio to showcase skills and projects.</p>
+          <div class="project-tech">
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status"><i class="fa-solid fa-circle-check"></i> Completed</span>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" id="project-cafe">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <span class="project-tag">Static Web</span>
+          </div>
+          <h3 class="project-title">Cafe Menu</h3>
+          <p class="project-desc">Simple static web page to view the cafe menu.</p>
+          <div class="project-tech">
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status"><i class="fa-solid fa-circle-check"></i> Completed</span>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal" id="project-academics">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <span class="project-tag">Web App</span>
+          </div>
+          <h3 class="project-title">Students Academics Tracker</h3>
+          <p class="project-desc">Web app to track academic performance and visualize progress.</p>
+          <div class="project-tech">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status"><i class="fa-solid fa-circle-check"></i> Completed</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─────────────────────────────────────────────────── -->
+  <section id="contact" class="section section-alt" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Get in touch</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-layout">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            Have a project in mind or want to collaborate? Feel free to reach out — I'd love to connect!
+          </p>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a href="mailto:dineshsriramvelan@gmail.com" class="contact-link" id="contact-email-link">
+                <span class="contact-icon-wrap"><i class="fa-solid fa-envelope"></i></span>
+                <span class="contact-detail">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">dineshsriramvelan@gmail.com</span>
+                </span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <a href="https://github.com/dineshsrivel" target="_blank" rel="noopener noreferrer" class="contact-link"
+                id="contact-github-link">
+                <span class="contact-icon-wrap"><i class="fa-brands fa-github"></i></span>
+                <span class="contact-detail">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">github.com/dineshsrivel</span>
+                </span>
+              </a>
+            </li>
+            <li class="contact-item">
+              <a href="https://www.linkedin.com/in/dinesh-sriram-velan-767101381/" target="_blank"
+                rel="noopener noreferrer" class="contact-link" id="contact-linkedin-link">
+                <span class="contact-icon-wrap"><i class="fa-brands fa-linkedin"></i></span>
+                <span class="contact-detail">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">linkedin.com/in/dinesh-sriram-velan</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form glass reveal" id="contact-form" novalidate>
+          <h3 class="form-title">Send a Message</h3>
+          <div class="form-group">
+            <label for="form-name" class="form-label">Your Name</label>
+            <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. John Doe" required
+              autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="form-email" class="form-label">Your Email</label>
+            <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. john@example.com"
+              required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="form-message" class="form-label">Message</label>
+            <textarea id="form-message" name="message" class="form-input form-textarea"
+              placeholder="Tell me about your project or opportunity..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-notice" id="form-notice" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ──────────────────────────────────────────────────── -->
+  <footer id="footer">
+    <div class="footer-container">
+      <p class="footer-copy">© 2026 <span class="footer-name">Dinesh Sriram Velan</span>. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="mailto:dineshsriramvelan@gmail.com" class="social-link" id="footer-email" aria-label="Email Dinesh">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com/dineshsrivel" target="_blank" rel="noopener noreferrer" class="social-link"
+          id="footer-github" aria-label="GitHub profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dinesh-sriram-velan-767101381/" target="_blank" rel="noopener noreferrer"
+          class="social-link" id="footer-linkedin" aria-label="LinkedIn profile">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
