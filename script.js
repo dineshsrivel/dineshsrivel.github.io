@@ -66,7 +66,7 @@ const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
       // Stagger children of grid containers
-      const delay = entry.target.closest('.skills-grid, .projects-grid')
+      const delay = entry.target.closest('.skills-grid, .projects-grid, .why-grid, .cert-grid')
         ? Array.from(entry.target.parentElement.children).indexOf(entry.target) * 80
         : 0;
       setTimeout(() => entry.target.classList.add('visible'), delay);
